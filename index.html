@@ -1,24 +1,614 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 10 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 10 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a interactuar con un sensor de partículas (Dust/PM2.5) para medir la concentración de contaminantes en el aire.</li>
+                                        <li>Que sean capaces de enviar estos datos a la nube (SmartIOT.space) y monitorear la salud ambiental.</li>
+                                        <li>Que conceptualicen cómo la Inteligencia Artificial utiliza la detección de anomalías en datos continuos (picos inesperados) para activar alertas críticas y cómo esta capacidad es vital para la salud pública y la gestión ambiental predictiva.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Micro:bit con IOTbit y sensor de partículas (Dust/PM2.5) configurado para leer y enviar datos a SmartIOT.space (o ThingSpeak), con alerta local por umbral, y conceptualización del rol de la IA en la detección de anomalías para salud ambiental predictiva.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para ThingSpeak (SmartIOT.space).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                        <li>1x sensor de partículas (Dust/PM2.5, ej. SDS011) por equipo.</li>
+                                        <li>1x buzzer por equipo.</li>
+                                        <li>SSID y Password de la red Wi-Fi de la clase.</li>
+                                        <li>Fuentes de polvo (ej. pañuelo, brocha con un poco de polvo) para simular eventos de partículas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit, sensores de partículas y buzzers listos.</li>
+                                                <li>Asegurarse de que las librerías específicas del sensor de partículas (ej. para SDS011, si aplica) estén disponibles para cargar en los Micro:bits.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                                <li>Tener las credenciales (SSID y Password) de la red Wi-Fi de la clase listas.</li>
+                                                <li>Asegurarse de que SmartIOT.space (o ThingSpeak) esté accesible y funcional, con un campo de datos configurado para partículas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en sensores de partículas (UART/Serial), la detección de anomalías con IA, y las implicaciones para salud pública/gestión ambiental.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión, incluyendo la comunicación serial.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit y sensor de partículas programado para enviar datos a SmartIOT.space y activar una alarma local al superar un umbral de PM2.5, para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. Han percibido su entorno de muchas maneras. Hoy, un paso crucial hacia IoT de alto impacto social: el monitoreo de la calidad del aire. La contaminación por PM2.5 es un riesgo invisible. Su Micro:bit será un 'centinela del aire', detectando concentración de partículas. Iniciaremos esta misión de 'salud ambiental'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Científico], y pienso en cómo las epidemias respiratorias se conectan con la calidad del aire. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy sus Micro:bits detectarán lo invisible. Conocerán el sensor de partículas (Dust/PM2.5) para medir contaminantes en el aire. Enviarán datos a la nube para monitorear salud ambiental. Conceptualizaremos cómo la IA usa la detección de anomalías (picos inesperados) para activar alertas críticas. Esta capacidad es vital para salud pública y gestión ambiental predictiva. Piensen en purificadores de aire inteligentes o aplicaciones de monitoreo ambiental."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Interactuar con un sensor de partículas (Dust/PM2.5) para medir contaminación, enviar datos a la nube para monitoreo ambiental, y conceptualizar cómo la IA detecta anomalías en datos continuos para alertas críticas.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender sensores de partículas, detección de anomalías con IA y salud ambiental.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, explícame cómo funciona un sensor de partículas (Dust/PM2.5) para medir la calidad del aire. Explica por qué es importante monitorear este dato en la nube para la salud ambiental, y cómo la IA utiliza la 'detección de anomalías' en datos continuos (picos inesperados) para activar alertas críticas, incluso sin umbrales fijos.'</strong> Presten atención a la detección de anomalías."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿qué es PM2.5 y cómo funciona el sensor para detectarlas?'</strong> o <strong>'¿Por qué el monitoreo en la nube es crucial para evaluar exposición y identificar fuentes de contaminación?'</strong> Pregunten: <strong>'¿Cómo la IA aprende un 'patrón normal' de calidad del aire y detecta desviaciones, incluso sin umbral fijo?'</strong> El objetivo es comprender la identificación de lo inesperado para la salud ambiental."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han explorado la importancia crítica de monitorear la calidad del aire y cómo la IA detecta lo 'anormal'. Ahora, aplicarán esto. Formen sus equipos de proyecto de **2 personas**. Construirán un sistema de monitoreo de partículas con sensor Dust/PM2.5 y su Micro:bit (IOTbit)."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un "Monitor de Partículas en la Nube con Alerta de Anomalías" y la describe a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su misión es diseñar una 'vibe' para un 'Monitor de Humo para Zonas de Alto Riesgo'. El Micro:bit leerá PM2.5 con el sensor SDS011. Enviar datos a ThingSpeak (field1) cada 30 segundos para monitorear tendencia. Si PM2.5 > 100 µg/m³ (umbral de 'riesgo'), LED rojo (P8) fijo y buzzer (P0) suena 3 segundos. Mostrar 'AIR OK' o 'ALERTA PM2.5' en pantalla. Describan a Xolo, incluyendo umbral y visualización."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python para el monitor de humo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias
+
+from network import WLAN, STA_IF
+
+from machine import Pin, UART # UART para sensores seriales como SDS011
+
+import urequests
+
+import time
+
+from iotit import * # Para usar display, LEDs, Buzzer
+
+# --- Configuración de la red Wi-Fi ---
+
+SSID = '[SSID_WIFI_CLASE]'
+
+PASSWORD = '[PASSWORD_WIFI_CLASE]'
+
+# --- Configuración de la API de SmartIOT.space (ThingSpeak-compatible) ---
+
+API_KEY = 'YOUR_THINGSPEAK_WRITE_API_KEY'
+
+CHANNEL_ID = 'YOUR_THINGSPEAK_CHANNEL_ID'
+
+THINGSPEAK_URL = 'http://api.thingspeak.com/update'
+
+# Definir pines para LED de alerta y Buzzer
+
+led_rojo_alerta = Pin(Pin.P8, Pin.OUT)
+
+buzzer = Pin(Pin.P0, Pin.OUT)
+
+# --- Configuración del sensor de partículas (Asumiendo SDS011, serial U(ART)) ---
+
+# Conectar TX del SDS011 a RX del Micro:bit (P15) y RX del SDS011 a TX del Micro:bit (P14)
+
+# Algunos sensores tienen un pin de SET/RESET, que se puede controlar con un pin digital si es necesario
+
+uart = UART(1, baudrate=9600, tx=Pin(14), rx=Pin(15), timeout=1000) # UART 1, TX en P14, RX en P15
+
+# --- Definición de Umbral de Alerta PM2.5 ---
+
+UMBRAL_PM25_ALERTA = 100 # µg/m³ (según estándar de calidad del aire)
+
+# --- Función para conectar a Wi-Fi (reutilizada) ---
+
+def connect_wifi():
+
+    wlan = WLAN(STA_IF)
+
+    wlan.active(True)
+
+    if not wlan.isconnected():
+
+        print('Intentando conectar a Wi-Fi...')
+
+        display.scroll("WIFI...")
+
+        wlan.connect(SSID, PASSWORD)
+
+        timeout = 0
+
+        while not wlan.isconnected() and timeout < 30:
+
+            display.show(Image.ASLEEP)
+
+            time.sleep_ms(300)
+
+            display.clear()
+
+            time.sleep_ms(300)
+
+            timeout += 1
+
+    if wlan.isconnected():
+
+        print('Conexión Wi-Fi exitosa:', wlan.ifconfig())
+
+        display.scroll("CONECTADO")
+
+        return True
+
+    else:
+
+        print('Fallo la conexión Wi-Fi.')
+
+        display.scroll("WIFI ERROR")
+
+        return False
+
+# --- Función para leer datos del sensor SDS011 ---
+
+# Nota: Esta es una simplificación. Una librería completa de SDS011 sería más robusta.
+
+def read_sds011_data():
+
+    pm25 = -1.0 # Valor por defecto de error
+
+    # Limpiar buffer de UART antes de leer
+
+    while uart.any():
+
+        uart.read()
+
+
+    # Enviar comando de lectura activa al sensor si es necesario (SDS011 necesita ser 'despertado')
+
+    # uart.write(bytes([0xAA, 0xB4, 0x06, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x06, 0xAB])) # Comando de lectura activa
+
+
+    data = uart.read(10) # Leer 10 bytes del sensor (formato de datos PM2.5 y PM10)
+
+    if data and len(data) == 10 and data[0] == 0xAA and data[1] == 0xC0:
+
+        # Checksum verification (simplified for example)
+
+        # low_byte = data[2]
+
+        # high_byte = data[3]
+
+        # pm25_val = ((high_byte * 256) + low_byte) / 10.0 # Convertir a µg/m³
+
+
+        # Simplified parsing for example (assuming data[2] and data[3] are PM2.5)
+
+        pm25 = (data[3] * 256 + data[2]) / 10.0 # PM2.5 = (high_byte * 256 + low_byte) / 10.0
+
+        print(f"PM2.5 crudo: {pm25} µg/m³")
+
+        return pm25
+
+    else:
+
+        print("Error al leer sensor SDS011 o datos incompletos:", data)
+
+        return -1.0 # Indicar error
+
+# --- Función para enviar un dato a ThingSpeak (reutilizada) ---
+
+def send_data_to_thingspeak(value, field_num=1):
+
+    try:
+
+        url_with_params = THINGSPEAK_URL + '?api_key=' + API_KEY + '&field' + str(field_num) + '=' + str(value)
+
+
+        print(f"Enviando dato (field{field_num}): {value}")
+
+        display.scroll("Evento...")
+
+        response = urequests.get(url_with_params)
+
+
+        if response.status_code == 200:
+
+            print("Dato enviado exitosamente.")
+
+            display.show(Image.CHECK)
+
+            time.sleep_ms(300)
+
+            display.clear()
+
+            return True
+
+        else:
+
+            print(f"Error evento. Código: {response.status_code} Mensaje: {response.text}")
+
+            display.show(Image.X)
+
+            time.sleep(1)
+
+            display.clear()
+
+            return False
+
+    except Exception as e:
+
+        print(f"Excepción al enviar evento: {e}")
+
+        display.show(Image.SAD)
+
+        time.sleep(1)
+
+        display.clear()
+
+        return False
+
+# --- Bucle principal del programa ---
+
+if connect_wifi():
+
+    display.scroll("Aire ON!")
+
+    time.sleep(1)
+
+
+    while True:
+
+        display.scroll("Mid. PM2.5...")
+
+
+        pm25_lectura = read_sds011_data()
+
+
+        if pm25_lectura != -1.0: # Si la lectura fue exitosa
+
+            print(f"PM2.5: {pm25_lectura} µg/m³")
+
+
+            # --- Lógica de Alerta de Umbral PM2.5 ---
+
+            if pm25_lectura > UMBRAL_PM25_ALERTA: # Si supera el umbral de alerta
+
+                led_rojo_alerta.write_digital(1) # Encender LED rojo de alerta
+
+                buzzer.write_digital(1) # Activar buzzer
+
+                display.show(Image.ANGRY) # Icono de alerta
+
+                print("¡ALERTA PM2.5 ALTA!")
+
+                time.sleep(3) # Buzzer suena por 3 segundos
+
+                buzzer.write_digital(0) # Apagar buzzer
+
+
+            else:
+
+                led_rojo_alerta.write_digital(0) # Apagar LED rojo
+
+                buzzer.write_digital(0) # Apagar buzzer
+
+                display.show(Image.HAPPY) # Icono de OK
+
+                print("Calidad del aire OK.")
+
+
+            # Enviar el dato a ThingSpeak (asumimos field1 para PM2.5)
+
+            send_data_to_thingspeak(pm25_lectura, 1)
+
+        else:
+
+            print("No se pudo leer el sensor PM2.5. Reintentando...")
+
+            display.show(Image.MEH) # Icono de duda
+
+
+        time.sleep(30) # Esperar 30 segundos antes de la siguiente lectura y envío
+
+else:
+
+    print("El sistema se detuvo debido a un error de conexión Wi-Fi. Reinicie para intentar de nuevo.")
+
+    display.scroll("ERROR Fatal")
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Analicen el código. Pregúntenle a Xolo: <strong>'¿Cómo se lee este sensor de partículas (UART/Serial) comparado con analógicos o I2C? ¿Por qué es más complejo?'</strong> También: <strong>'¿Cómo la IA detecta anomalías (picos inesperados) sin umbrales fijos para alertas críticas?'</strong> Y: <strong>'¿Por qué la capacidad de la IA para detectar anomalías es superior a un umbral fijo?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ensamblen su 'Monitor de Humo'. Conecten sensor de partículas (SDS011) a pines seriales (TX a P15/RX, RX a P14/TX). Conecten LED rojo a P8 y buzzer a P0. Copien el código y ajusten `UMBRAL_PM25_ALERTA`. Asegúrense de alimentación y 'calentamiento'. Carguen y prueben: expongan sensor a polvo. Observen reacción local y datos en ThingSpeak. Si el sistema no reacciona o datos erróneos, depuren con Xolo. Si la consola muestra 'Error al leer sensor SDS011', pregunten a Xolo: <strong>'¿Por qué hay un error en la lectura serial?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: 'Si cada hogar tuviera monitores de partículas con IA, ¿cómo cambiaría la gestión de alergias, aire interior y salud pública? ¿Qué desafíos éticos surgirían al tener 'policías del aire' monitoreando continuamente?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Ahora, discutan sus reflexiones con su compañero. Compartan visiones sobre una 'sociedad monitoreada por partículas'. ¿Piensan en escenarios donde la IA y los datos de PM2.5 podrían usarse de forma no deseada?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Algunos equipos, compartan sus conclusiones. ¿Qué implicaciones éticas y sociales tiene el monitoreo ubicuo de la calidad del aire?"</p>
+                            <p class="dialogue user"><strong>Equipo 1:</strong> "Tendríamos purificadores de aire automáticos. Desafío ético: la IA podría 'saber' cuándo alguien fuma en casa o hay más gente, usándose para multas o seguros."</p>
+                            <p class="dialogue user"><strong>Equipo 2:</strong> "Las ciudades tendrían mapas de contaminación en tiempo real. Riesgo: datos de aire interior podrían espiar hábitos de vida, invadiendo la privacidad del hogar."</p>
+                            <p class="dialogue user"><strong>Equipo 3:</strong> "Menos asma si las alertas fueran automáticas. Desafío ético: la 'discriminación algorítmica' si la IA dice que un barrio tiene mal aire, afectando el valor de propiedades y creando desigualdad."</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Felicidades, equipo. Construyeron un 'centinela del aire', detectando contaminantes invisibles vitales para la salud. Experimentaron la complejidad de sensores seriales y conceptualizaron cómo la IA usa detección de anomalías para alertas críticas, sin umbrales fijos. Esto es el corazón de la salud ambiental predictiva. Han expandido su **monitoreo ambiental a la calidad del aire**, aplicando **detección de anomalías** para alertas más inteligentes y proactivas. La próxima sesión explorará la identificación única y la logística con sensores RFID."</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
