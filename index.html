@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta misión se centra en la calidad del aire y el concepto de Detección de Anomalías con IA.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -71,20 +72,22 @@
                                     <strong>Objetivos:</strong>
                                     <ul>
                                         <li>Que los estudiantes integren un sensor de calidad del aire (Polvo/PM2.5).</li>
-                                        <li>Que comprendan las implicaciones de las partículas PM2.5 para la salud ambiental y personal.</li>
-                                        <li>Que conceptualicen cómo la IA utiliza la detección de anomalías para identificar eventos inusuales en flujos de datos.</li>
+                                        <li>Que comprendan sus implicaciones para la salud ambiental y personal.</li>
+                                        <li>Que conceptualicen cómo la IA utiliza estos datos para la detección de anomalías, diferenciándolo de un umbral simple.</li>
                                         <li>Que diseñen un sistema de monitoreo o alerta basado en la calidad del aire.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Exploración del impacto de PM2.5 y el concepto de Detección de Anomalías en IA.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DISEÑO LIBRE):</strong> Ideación, Vibe Coding, e implementación de un sistema de monitoreo de calidad del aire.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre el uso de la tecnología para la salud pública.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un proyecto funcional que utiliza un sensor de partículas para activar una alerta visual (ej. LEDs de colores) basada en umbrales de calidad del aire.</li>
-                                        <li>Una explicación de cómo su sistema podría ser mejorado con un modelo de IA de detección de anomalías.</li>
+                                        <li>Un script funcional y original en MicroPython que lee datos de un sensor de PM2.5 y activa un indicador visual multinivel (ej. verde/amarillo/rojo) basado en umbrales.</li>
+                                        <li>Comprensión conceptual demostrada de la Detección de Anomalías y de la depuración de sensores con librerías específicas.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -94,19 +97,21 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, 1 sensor de Polvo/PM2.5, y cables de conexión.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>1 Sensor de Polvo/PM2.5 (y su librería o documentación si es necesaria) por equipo.</li>
+                                        <li>(Opcional) Un potenciómetro para simular la entrada del sensor si el sensor real es complejo.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Asegurar que los sensores de PM2.5 estén disponibles y funcionales. Revisar si requieren una librería específica.</li>
-                                                <li>Verificar la funcionalidad del chat de Xolo y tener cargada la presentación.</li>
+                                                <li>Verificar que el sensor de PM2.5 esté funcional y que se conozca su protocolo de lectura o la librería necesaria.</li>
+                                                <li>Investigar y tener a mano los umbrales de calidad del aire estándar (AQI) para dar contexto a los estudiantes.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de Detección de Anomalías y las particularidades de los sensores de partículas (ciclos de medición, etc.). Estar preparado para guiar la depuración a nivel de protocolo del sensor.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un "Indicador Visual de Calidad del Aire" funcional. Sería útil tener una fuente segura para generar partículas (como un encendedor o una vela apagada que genere humo) para demostrar cambios en la lectura del sensor.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de Detección de Anomalías y cómo se diferencia de un umbral fijo. Estar preparado para guiar la depuración de sensores complejos que pueden requerir un ciclo de medición específico.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto funcional de 'Indicador de Calidad del Aire' para demostrar el sistema. Tener una fuente de partículas (como humo de una vela apagada o polvo) para mostrar un cambio en la lectura en tiempo real.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -118,29 +123,29 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar el monitoreo de la calidad del aire.</p>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la importancia de medir la calidad del aire.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la importancia de medir la calidad del aire.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Buenos días, ingenieros. Nuestros sistemas ya pueden 'sentir' el clima, la luz, el sonido y la presencia. Hoy vamos a darles un sentido mucho más sutil pero increíblemente importante: la capacidad de medir la calidad del aire que respiramos. Trabajaremos con un sensor que detecta partículas finas, un indicador clave de la contaminación.</p>
+                                <p class="dialogue assistant">Buenos días, ingenieros. Nuestros sistemas ya pueden 'sentir' el clima, la luz y la presencia. Hoy vamos a darles un sentido mucho más sutil pero increíblemente importante: la capacidad de medir la calidad del aire que respiramos. Trabajaremos con un sensor que detecta partículas finas, un indicador clave de la contaminación.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como siempre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Carla, perfil Científico, y me interesa la salud pública y el medio ambiente. Lista para la Misión 10.'</strong></p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Científico, y me interesa la salud pública y el medio ambiente.'</strong> Esto permitirá a Xolo enmarcar la importancia de la misión de hoy. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -148,30 +153,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (Calidad del Aire y Detección de Anomalías) ⏰ 10 minutos</h2>
-                <p>Construir el andamiaje conceptual sobre las partículas PM2.5 y el concepto de Detección de Anomalías en IA.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la calidad del aire y la detección de anomalías.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Investigación sobre PM2.5</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen sobre la calidad del aire.</p>
+                            <h3>Paso 1: "I Can Statement" de Monitoreo Avanzado</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Su investigación con Xolo hoy es crucial. De forma individual, comiencen por este prompt: <strong>'Xolo, explícame qué son las partículas PM2.5 y por qué son un riesgo para la salud.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Valor Alto vs. Anomalía</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador guía la siguiente consulta, enfocada en un concepto avanzado de IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, un concepto de IA muy poderoso. Pregúntenle a Xolo: <strong>'¿Cuál es la diferencia entre un valor alto y una 'anomalía' para una IA?'</strong> Esto distingue un sistema simple de uno verdaderamente inteligente.</p>
+                                <p class="dialogue assistant">La meta de hoy es conectar sensores con un concepto avanzado de IA. Al finalizar, podrán afirmar: <strong>'Yo puedo integrar un sensor de calidad del aire y explicar cómo la IA usa sus datos para la detección de anomalías, un método más inteligente que un simple umbral.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -179,42 +172,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Proyectos de Calidad del Aire) ⏰ 22 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un proyecto creativo de monitoreo de calidad del aire.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (Calidad del Aire y Anomalías) ⏰ 10 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre el impacto de las partículas PM2.5 y el concepto de Detección de Anomalías.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío de diseño libre.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre el sensor y el concepto de IA.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora es su turno de ser guardianes de la calidad del aire. Formen sus parejas. Su misión es diseñar un proyecto **libre** que utilice el sensor de polvo/PM2.5. Pueden crear un monitor para el aula, una alerta de calidad del aire para una ventana, o un sistema que active un purificador simulado. El concepto es suyo.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es de alto impacto. Primero, pregunten: <strong>'Xolo, ¿qué significa PM2.5 y por qué es un riesgo para la salud?'</strong> Una vez que entiendan la importancia, exploren el concepto de IA: <strong>'Ahora, explícame la diferencia entre un valor alto y una "anomalía" para una IA.'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación, Vibe Coding y Generación</h3>
-                            <p>(Proyectar Diapositiva 6) Las parejas definen su 'vibe' y colaboran con Xolo.</p>
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Discutan y definan la lógica de su sistema. Luego, descríbanla a Xolo. Por ejemplo: <strong>'Xolo, vibe de indicador de calidad del aire: LED verde para buena calidad, amarillo para moderada, y rojo parpadeante para mala, usando diferentes umbrales de PM2.5.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración de Sensores Complejos</h3>
-                             <p>(Proyectar Diapositiva 7) Las parejas implementan el código y enfrentan desafíos de hardware.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen sus proyectos. La conexión y lectura de este sensor puede ser compleja. Si el sensor no devuelve valores lógicos, no asuman que está roto. Describan el problema a Xolo. Por ejemplo: <strong>'Xolo, nuestro sensor de PM2.5 siempre da cero.'</strong> Él los guiará para verificar la documentación del sensor, el ciclo de medición que podría requerir, la alimentación y si están usando la librería de Python correcta."</p>
+                                <p class="dialogue assistant">(Mientras circula) "La idea de que una IA aprende un 'patrón normal' es fundamental. Para asegurar que lo entienden, pregúntenle a Xolo: <strong>'¿Podría una IA aprender un patrón normal que en realidad es 'malo', como en una ciudad muy contaminada?'</strong> O, <strong>'¿Qué tipo de datos, además de PM2.5, necesitaría una IA para hacer una detección de anomalías más precisa?'</strong>"</p>
                             </div>
                         </div>
                     </div>
@@ -222,42 +203,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Salud y Tecnología) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en el impacto social de la tecnología de monitoreo.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Guardianes del Aire) ⏰ 22 minutos</h2>
+                <p>Los estudiantes diseñan, implementan y depuran un proyecto original de monitoreo de calidad del aire.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>Los alumnos reflexionan individualmente sobre la aplicación de su sistema.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño libre y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen: ¿Cómo podría el sistema que construyeron hoy ayudar a una persona con una condición respiratoria como el asma?</p>
+                                <p class="dialogue assistant">Ahora es su turno de ser guardianes de la calidad del aire. Formen sus parejas. Su misión es diseñar un proyecto **libre** que utilice el sensor de polvo/PM2.5. Pueden crear un monitor para el aula, una alerta para una ventana, o un sistema que active un purificador simulado. Piensen en una necesidad real.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su concepto, lo comunican a Xolo y reciben el código base.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Discutan y definan su 'vibe'. Luego, descríbansela a Xolo para que genere el código. Por ejemplo: <strong>'Xolo, queremos un indicador visual de calidad del aire con tres niveles: un LED verde para 'bueno', amarillo para 'moderado', y rojo parpadeante para 'malo', usando nuestros propios umbrales.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Sensores Complejos</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su sistema, enfrentando los desafíos de un sensor que puede requerir un protocolo específico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen su proyecto. La conexión y lectura de este sensor puede ser más compleja. Si no obtienen lecturas o son erróneas, no asuman que el sensor está roto. Describan el problema a Xolo. Por ejemplo: <strong>'Xolo, nuestro sensor siempre da un valor casi cero.'</strong> Él los guiará para revisar la documentación, la alimentación de energía y si necesitan una librería de Python específica para su modelo de sensor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en el impacto de la tecnología en la salud y la sociedad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Cómo podría el sistema que construyeron hoy ayudar a una persona con una condición respiratoria como el asma?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas las implicaciones de una red de monitoreo a gran escala.</p>
+                            <p>Los alumnos discuten las implicaciones a gran escala de su tecnología.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan las implicaciones económicas y sociales de tener una red de estos sensores por toda una ciudad. ¿Qué nuevas políticas públicas o decisiones se podrían tomar con esos datos? Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos las implicaciones económicas y sociales de tener una red de miles de estos sensores por toda una ciudad. ¿Qué nuevas políticas o servicios podrían crearse?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su proyecto y el facilitador cierra la sesión.</p>
+                            <p>Algunas parejas comparten sus proyectos y el facilitador cierra la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el sistema que diseñaron y una conclusión que sacaron sobre la importancia de monitorear la calidad del aire. (Escuchar 2-3 respuestas). Excelente. Han trabajado con datos que tienen un impacto directo en la salud humana y han explorado cómo la IA detecta anomalías para generar alertas inteligentes. Esta es la tecnología en su máxima expresión: al servicio del bienestar. En la próxima misión, nos moveremos hacia la logística y la identificación.</p>
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan el sistema que diseñaron y una conclusión que sacaron sobre la importancia de monitorear la calidad del aire. (Escuchar respuestas). Han trabajado con datos que tienen un impacto directo en la salud humana y han explorado cómo la IA detecta anomalías para generar alertas inteligentes. Esta es la tecnología en su máxima expresión: al servicio del bienestar. En la próxima misión, cambiaremos de dominio hacia la logística y la identificación.</p>
                             </div>
                         </div>
                     </div>
